@@ -23,4 +23,3 @@ def test_only_owner_can_withdraw():
     bad_actor = accounts.add()
     with pytest.raises(exceptions.VirtualMachineError):
         fund_me.withdraw({"from": bad_actor})
-        # fdus
